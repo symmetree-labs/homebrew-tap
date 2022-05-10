@@ -1,10 +1,10 @@
-# Symmetree-labs Zerostash-tap
+# Symmetree Labs Zerostash
 
 ## How do I install these formulae?
 
-`brew install symmetree-labs/zerostash-tap/<formula>`
+`brew install symmetree-labs/homebrew-tap/zerostash`
 
-Or `brew tap symmetree-labs/zerostash-tap` and then `brew install <formula>`.
+Or `brew tap symmetree-labs/homebrew-tap` and then `brew install zerostash`.
 
 ## Documentation
 
