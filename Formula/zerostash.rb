@@ -32,12 +32,12 @@ class Zerostash < Formula
     if build.head?
       system "cargo", "install", "--locked", "--root", prefix, "--path", "zerostash", "--bin", "0s"
     else
-      libexec.install Dir["*"]
+      bin.install '0s'
     end
   end
 
   test do
     output = shell_output("0s -V")
-    assert_match "zerostash #{version}", output
+    assert_match "zerostash 0.4.1", output
   end
 end
