@@ -5,7 +5,7 @@ class Zerostash < Formula
 
   license any_of: ["Apache-2.0", "MIT"]
 
-  head do 
+  head do
     url "https://github.com/symmetree-labs/zerostash.git", tag: version
     depends_on "rust" => :build
   end
@@ -32,7 +32,7 @@ class Zerostash < Formula
     if build.head?
       system "cargo", "install", "--locked", "--root", prefix, "--path", "zerostash", "--bin", "0s"
     else
-      bin.install '0s'
+      bin.install "0s"
     end
   end
 
