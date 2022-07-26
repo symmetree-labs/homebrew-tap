@@ -1,7 +1,7 @@
 class Zerostash < Formula
   desc "Safe and speedy backups"
   homepage "https://github.com/symmetree-labs/zerostash"
-  version "0.4.1.1"
+  version "0.5.0"
 
   license any_of: ["Apache-2.0", "MIT"]
 
@@ -12,19 +12,19 @@ class Zerostash < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/symmetree-labs/zerostash/releases/download/v#{version}/0s-v#{version}-macos-aarch64.tar.gz"
-      sha256 "f6fbff8643dd7ad9d62980af7a9d47f5ee55253a367fb591d7bd5b5277294c30"
+      url "https://github.com/symmetree-labs/zerostash/releases/download/v0.5.0/0s-v0.5.0-macos-aarch64.tar.gz"
+      sha256 "11a898d32c0d8fa537a1221b49a3e36613dd57b1fb217df82e5c651bef219ca6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/symmetree-labs/zerostash/releases/download/v#{version}/0s-v#{version}-macos-x86_64.tar.gz"
-      sha256 "180f410e7b10e7eab53bd188598e66d61d62c257aae3ce2a1bc77a8391e0b179"
+      url "https://github.com/symmetree-labs/zerostash/releases/download/v0.5.0/0s-v0.5.0-macos-x86_64.tar.gz"
+      sha256 "7151e47c838ff4be812dd7b514531d2a64f5fbed9271ef693595cf986b86ae76"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/symmetree-labs/zerostash/releases/download/v#{version}/0s-v#{version}-linux-x86_64.tar.xz"
-      sha256 "a7c7761b32942a7814660699a2e6d5dd4dd99cf3bbbd575974b4414a405303a0"
+      url "https://github.com/symmetree-labs/zerostash/releases/download/v0.5.0/0s-v0.5.0-linux-x86_64.tar.xz"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   end
 
